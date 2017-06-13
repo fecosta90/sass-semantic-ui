@@ -15,12 +15,12 @@
 
 @font-face {
   font-family: 'Icons';
-  src: url("#{$icons-font-path}/icons.eot?v=#{$icons-version}");
-  src: url("#{$icons-font-path}/icons.eot?#iefix&v=#{$icons-version}") format('embedded-opentype'), 
-  url("#{$icons-font-path}/icons.woff2?v=#{$icons-version}") format('woff2'), 
-  url("#{$icons-font-path}/icons.woff?v=#{$icons-version}") format('woff'), 
-  url("#{$icons-font-path}/icons.ttf?v=#{$icons-version}") format('truetype'), 
-  url("#{$icons-font-path}/icons.svg?v=#{$icons-version}#icons") format('svg');
+  src: url("#{$icons-font-path}icons.eot");
+  src: url("#{$icons-font-path}icons.eot?#iefix") format('embedded-opentype'),
+  url("#{$icons-font-path}icons.woff2") format('woff2'),
+  url("#{$icons-font-path}icons.woff") format('woff'),
+  url("#{$icons-font-path}icons.ttf") format('truetype'),
+  url("#{$icons-font-path}icons.svg#icons") format('svg');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
