@@ -12,6 +12,14 @@
 /*******************************
              Flag
 *******************************/
+@function semantic-image-url($url) {
+  @if function-exists(image-url) {
+    @return image-url($url);
+  }
+  @else {
+    @return url($flags-image-path + $url);
+  }
+}
 
 i.flag:not(.icon) {
   display: inline-block;
@@ -31,7 +39,7 @@ i.flag:not(.icon) {
 i.flag:not(.icon):before {
   display: inline-block;
   content: '';
-  background: image-url("#{$flags-image-path}/flags.png") no-repeat -108px -1976px;
+  background:semantic-image-url("flags.png") no-repeat -108px -1976px;
   width: 16px;
   height: 11px;
 }

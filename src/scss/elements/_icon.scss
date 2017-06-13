@@ -13,14 +13,23 @@
              Icon
 *******************************/
 
+@function semantic-font-url($url) {
+  @if function-exists(font-url) {
+    @return font-url($url);
+  }
+  @else {
+    @return url($icons-font-path + $url);
+  }
+}
+
 @font-face {
   font-family: 'Icons';
-  src: url("#{$icons-font-path}icons.eot");
-  src: url("#{$icons-font-path}icons.eot?#iefix") format('embedded-opentype'),
-  url("#{$icons-font-path}icons.woff2") format('woff2'),
-  url("#{$icons-font-path}icons.woff") format('woff'),
-  url("#{$icons-font-path}icons.ttf") format('truetype'),
-  url("#{$icons-font-path}icons.svg#icons") format('svg');
+  src: semantic-font-url("icons.eot");
+  src: semantic-font-url("icons.eot?#iefix") format('embedded-opentype'),
+  semantic-font-url("icons.woff2") format('woff2'),
+  semantic-font-url("icons.woff") format('woff'),
+  semantic-font-url("icons.ttf") format('truetype'),
+  semantic-font-url("icons.svg#icons") format('svg');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
