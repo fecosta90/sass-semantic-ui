@@ -26,6 +26,7 @@
   font-family: 'Icons';
   src: semantic-font-url("icons.eot");
   src: semantic-font-url("icons.eot?#iefix") format('embedded-opentype'),
+  semantic-font-url("icons.woff2") format('woff2'),
   semantic-font-url("icons.woff") format('woff'),
   semantic-font-url("icons.ttf") format('truetype'),
   semantic-font-url("icons.svg#icons") format('svg');
@@ -35,6 +36,7 @@
   text-decoration: inherit;
   text-transform: none;
 }
+
 i.icon {
   display: inline-block;
   opacity: 1;
@@ -51,11 +53,17 @@ i.icon {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 i.icon:before {
   background: none !important;
 }
+
+
+/*******************************
+             Types
+*******************************/
+
 
 /*--------------
     Loading
@@ -65,26 +73,26 @@ i.icon.loading {
   height: 1em;
   line-height: 1;
   -webkit-animation: icon-loading 2s linear infinite;
-          animation: icon-loading 2s linear infinite;
+  animation: icon-loading 2s linear infinite;
 }
 @-webkit-keyframes icon-loading {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes icon-loading {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -105,6 +113,12 @@ i.emphasized.icon {
 i.disabled.icon {
   opacity: 0.45 !important;
 }
+
+
+/*******************************
+           Variations
+*******************************/
+
 
 /*-------------------
         Fitted
@@ -155,11 +169,11 @@ i.circular.inverted.icon {
 i.flipped.icon,
 i.horizontally.flipped.icon {
   -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
 i.vertically.flipped.icon {
   -webkit-transform: scale(1, -1);
-          transform: scale(1, -1);
+  transform: scale(1, -1);
 }
 
 /*-------------------
@@ -170,12 +184,12 @@ i.rotated.icon,
 i.right.rotated.icon,
 i.clockwise.rotated.icon {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 i.left.rotated.icon,
 i.counterclockwise.rotated.icon {
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 /*-------------------
@@ -447,7 +461,7 @@ i.icons .icon {
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   margin: 0em;
   margin: 0;
 }
@@ -457,7 +471,7 @@ i.icons .icon:first-child {
   height: auto;
   vertical-align: top;
   -webkit-transform: none;
-          transform: none;
+  transform: none;
   margin-right: 0.25rem;
 }
 
@@ -468,9 +482,33 @@ i.icons .corner.icon {
   right: 0;
   bottom: 0;
   -webkit-transform: none;
-          transform: none;
+  transform: none;
   font-size: 0.45em;
   text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
+}
+i.icons .top.right.corner.icon {
+  top: 0;
+  left: auto;
+  right: 0;
+  bottom: auto;
+}
+i.icons .top.left.corner.icon {
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+}
+i.icons .bottom.left.corner.icon {
+  top: auto;
+  left: 0;
+  right: auto;
+  bottom: 0;
+}
+i.icons .bottom.right.corner.icon {
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: 0;
 }
 i.icons .inverted.corner.icon {
   text-shadow: -1px -1px 0 #1B1C1D, 1px -1px 0 #1B1C1D, -1px 1px 0 #1B1C1D, 1px 1px 0 #1B1C1D;
@@ -3284,3 +3322,9 @@ i.icon.times.rectangle:before {
 i.icon.times.rectangle.outline:before {
   content: "\f2d4";
 }
+
+
+/*******************************
+         Site Overrides
+*******************************/
+
