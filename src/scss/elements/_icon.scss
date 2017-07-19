@@ -26,7 +26,6 @@
   font-family: 'Icons';
   src: semantic-font-url("icons.eot");
   src: semantic-font-url("icons.eot?#iefix") format('embedded-opentype'),
-  semantic-font-url("icons.woff2") format('woff2'),
   semantic-font-url("icons.woff") format('woff'),
   semantic-font-url("icons.ttf") format('truetype'),
   semantic-font-url("icons.svg#icons") format('svg');
@@ -2464,8 +2463,8 @@ i.icon.contao:before {
   content: "\f26d";
 }
 i.icon.\35 00px:before {
-  content: "\f26e";
-}
+               content: "\f26e";
+             }
 i.icon.amazon:before {
   content: "\f270";
 }
@@ -3285,9 +3284,3 @@ i.icon.times.rectangle:before {
 i.icon.times.rectangle.outline:before {
   content: "\f2d4";
 }
-
-
-/*******************************
-         Site Overrides
-*******************************/
-
