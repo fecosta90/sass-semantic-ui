@@ -1,13 +1,9 @@
 $import-google-fonts: true !default;
 $font-url: 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext' !default;
 $font-name: 'Lato' !default;
-$font-family: $font-name,
-'Helvetica Neue',
-Arial,
-Helvetica,
-sans-serif !default;
-$icons-font-path: '../../icons' !default;
-$flags-image-path: '../../images' !default;
+$font-family: $font-name, 'Helvetica Neue', Arial, Helvetica, sans-serif !default;
+$icons-font-path: '../../icons/' !default;
+$flags-image-path: '../../images/' !default;
 // Body Variables
 $body-bg-color:#FFFFFF !default;
 $body-font-size: 14px !default;
@@ -30,7 +26,7 @@ $purple:#A333C8 !default;
 $pink:#E03997 !default;
 $brown:#A5673F !default;
 $grey:#767676 !default;
-$inverted:#FFFFFF !default;
+$white:#FFFFFF !default;
 $inverted-label:rgba(255, 255, 255, 0.9) !default;
 $inverted-red:#FF695E !default;
 $inverted-orange:#FF851B !default;

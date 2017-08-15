@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.10 - Sticky
+ * # Semantic UI 2.2.12 - Sticky
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -8,71 +8,40 @@
  *
  */
 
-
 /*******************************
             Sticky
 *******************************/
 
-.ui.sticky {
-  position: static;
-  -webkit-transition: none;
-  transition: none;
-  z-index: 800;
+.ui {
+  &.sticky {
+    position: static;
+    -webkit-transition: none;
+    transition: none;
+    z-index: 800;
+    &.bound {
+      position: absolute;
+      left: auto;
+      right: auto;
+    }
+    &.fixed {
+      position: fixed;
+      left: auto;
+      right: auto;
+    }
+    &.bound.top, &.fixed.top {
+      top: 0px;
+      bottom: auto;
+    }
+    &.bound.bottom, &.fixed.bottom {
+      top: auto;
+      bottom: 0px;
+    }
+  }
+  &.native.sticky {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+  }
 }
-
-
-/*******************************
-            States
-*******************************/
-
-
-/* Bound */
-.ui.sticky.bound {
-  position: absolute;
-  left: auto;
-  right: auto;
-}
-
-/* Fixed */
-.ui.sticky.fixed {
-  position: fixed;
-  left: auto;
-  right: auto;
-}
-
-/* Bound/Fixed Position */
-.ui.sticky.bound.top,
-.ui.sticky.fixed.top {
-  top: 0px;
-  bottom: auto;
-}
-.ui.sticky.bound.bottom,
-.ui.sticky.fixed.bottom {
-  top: auto;
-  bottom: 0px;
-}
-
-
-/*******************************
-            Types
-*******************************/
-
-.ui.native.sticky {
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  position: sticky;
-}
-
-
-/*******************************
-         Theme Overrides
-*******************************/
-
-
-
-/*******************************
-         Site Overrides
-*******************************/
-

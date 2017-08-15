@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.11 - Modal
+ * # Semantic UI 2.2.12 - Modal
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -20,11 +20,15 @@
     top: 50%;
     left: 50%;
     text-align: left;
-    background: #FFFFFF;
+    background: $white;
     border: none;
     box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2), 1px 3px 15px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform-origin: 50% 25%;
     transform-origin: 50% 25%;
     border-radius: 0.28571429rem;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
     user-select: text;
     will-change: top, left, margin, transform, opacity;
     > {
@@ -44,7 +48,7 @@
         z-index: 1;
         opacity: 0.8;
         font-size: 1.25em;
-        color: #FFFFFF;
+        color: $white;
         width: 2.25rem;
         height: 2.25rem;
         padding: 0.625rem 0rem 0rem 0rem;
@@ -54,8 +58,8 @@
       }
       .header {
         display: block;
-        font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        background: #FFFFFF;
+        font-family: $font-family;
+        background: $white;
         margin: 0em;
         padding: 1.25rem 1.5rem;
         box-shadow: none;
@@ -73,37 +77,56 @@
         font-size: 1em;
         line-height: 1.4;
         padding: 1.5rem;
-        background: #FFFFFF;
+        background: $white;
       }
       .image.content {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
       }
       .content > .image {
         display: block;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
         flex: 0 1 auto;
         width: '';
+        -ms-flex-item-align: top;
+        -ms-grid-row-align: top;
         align-self: top;
       }
       [class*="top aligned"] {
+        -ms-flex-item-align: top;
+        -ms-grid-row-align: top;
         align-self: top;
       }
       [class*="middle aligned"] {
+        -ms-flex-item-align: middle;
+        -ms-grid-row-align: middle;
         align-self: middle;
       }
       [class*="stretched"] {
+        -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
         align-self: stretch;
       }
       .content > {
         .description {
           display: block;
+          -webkit-box-flex: 1;
+          -ms-flex: 1 0 auto;
           flex: 1 0 auto;
           min-width: 0px;
+          -ms-flex-item-align: top;
+          -ms-grid-row-align: top;
           align-self: top;
         }
         .icon + .description {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 1 auto;
           flex: 0 1 auto;
           min-width: '';
           width: auto;
@@ -111,6 +134,8 @@
         }
         .image {
           + .description {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
             flex: 0 1 auto;
             min-width: '';
             width: auto;
@@ -144,13 +169,13 @@
     border: none;
     border-radius: 0em;
     box-shadow: none !important;
-    color: #FFFFFF;
+    color: $white;
     > {
       .header, .content, .actions {
         background-color: transparent;
       }
       .header {
-        color: #FFFFFF;
+        color: $white;
       }
       .close {
         top: 1rem;
@@ -160,11 +185,16 @@
   }
   &.inverted.dimmer > {
     .basic.modal {
-      color: rgba(0, 0, 0, 0.87);
+      color: $font-color;
     }
     .ui.basic.modal > .header {
       color: rgba(0, 0, 0, 0.85);
     }
+  }
+  &.loading.modal {
+    display: block;
+    visibility: hidden;
+    z-index: -1;
   }
   &.active.modal {
     display: block;
@@ -246,7 +276,7 @@
     .close {
       top: 1.0535rem;
       right: 1rem;
-      color: rgba(0, 0, 0, 0.87);
+      color: $font-color;
     }
   }
 }
@@ -269,6 +299,9 @@
       }
     }
     .image.content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
     }
     .content {
@@ -316,7 +349,7 @@
 /* Tablet and Mobile */
 @media only screen and (max-width: 991px) {
   .ui.basic.modal > .close {
-    color: #FFFFFF;
+    color: $white;
   }
 }
 
@@ -405,7 +438,7 @@
       .close {
         top: 1.0535rem;
         right: 1rem;
-        color: rgba(0, 0, 0, 0.87);
+        color: $font-color;
       }
     }
   }
@@ -582,11 +615,3 @@
     margin: 0em 0em 0em -570px;
   }
 }
-
-/*******************************
-         Theme Overrides
-*******************************/
-
-/*******************************
-         Site Overrides
-*******************************/

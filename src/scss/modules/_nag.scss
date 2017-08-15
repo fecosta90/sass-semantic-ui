@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.10 - Nag
+ * # Semantic UI 2.2.12 - Nag
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -7,7 +7,6 @@
  * http://opensource.org/licenses/MIT
  *
  */
-
 
 /*******************************
              Nag
@@ -28,120 +27,82 @@
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   font-size: 1rem;
   text-align: center;
-  color: rgba(0, 0, 0, 0.87);
+  color: $font-color;
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
   -webkit-transition: 0.2s background ease;
   transition: 0.2s background ease;
 }
+
 a.ui.nag {
   cursor: pointer;
 }
-.ui.nag > .title {
-  display: inline-block;
-  margin: 0em 0.5em;
-  color: #FFFFFF;
+
+.ui {
+  &.nag {
+    > {
+      .title {
+        display: inline-block;
+        margin: 0em 0.5em;
+        color: $white;
+      }
+      .close.icon {
+        cursor: pointer;
+        opacity: 0.4;
+        position: absolute;
+        top: 50%;
+        right: 1em;
+        font-size: 1em;
+        margin: -0.5em 0em 0em;
+        color: $white;
+        -webkit-transition: opacity 0.2s ease;
+        transition: opacity 0.2s ease;
+      }
+    }
+    &:hover {
+      background: #555555;
+      opacity: 1;
+    }
+    .close:hover {
+      opacity: 1;
+    }
+  }
+  &.overlay.nag {
+    position: absolute;
+    display: block;
+  }
+  &.fixed.nag {
+    position: fixed;
+  }
+  &.bottom {
+    &.nags, &.nag {
+      border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+      top: auto;
+      bottom: 0em;
+    }
+  }
+  &.inverted {
+    &.nags .nag, &.nag {
+      background-color: #F3F4F5;
+      color: rgba(0, 0, 0, 0.85);
+    }
+    &.nags .nag {
+      .close, .title {
+        color: $secondary-font;
+      }
+    }
+    &.nag {
+      .close, .title {
+        color: $secondary-font;
+      }
+    }
+  }
+  &.nags .nag {
+    border-radius: 0em !important;
+    &:last-child {
+      border-radius: 0em 0em 0.28571429rem 0.28571429rem;
+    }
+  }
+  &.bottom.nags .nag:last-child {
+    border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+  }
 }
-.ui.nag > .close.icon {
-  cursor: pointer;
-  opacity: 0.4;
-  position: absolute;
-  top: 50%;
-  right: 1em;
-  font-size: 1em;
-  margin: -0.5em 0em 0em;
-  color: #FFFFFF;
-  -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
-}
-
-
-/*******************************
-             States
-*******************************/
-
-
-/* Hover */
-.ui.nag:hover {
-  background: #555555;
-  opacity: 1;
-}
-.ui.nag .close:hover {
-  opacity: 1;
-}
-
-
-/*******************************
-           Variations
-*******************************/
-
-
-/*--------------
-     Static
----------------*/
-
-.ui.overlay.nag {
-  position: absolute;
-  display: block;
-}
-
-/*--------------
-     Fixed
----------------*/
-
-.ui.fixed.nag {
-  position: fixed;
-}
-
-/*--------------
-     Bottom
----------------*/
-
-.ui.bottom.nags,
-.ui.bottom.nag {
-  border-radius: 0.28571429rem 0.28571429rem 0em 0em;
-  top: auto;
-  bottom: 0em;
-}
-
-/*--------------
-     White
----------------*/
-
-.ui.inverted.nags .nag,
-.ui.inverted.nag {
-  background-color: #F3F4F5;
-  color: rgba(0, 0, 0, 0.85);
-}
-.ui.inverted.nags .nag .close,
-.ui.inverted.nags .nag .title,
-.ui.inverted.nag .close,
-.ui.inverted.nag .title {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-
-/*******************************
-           Groups
-*******************************/
-
-.ui.nags .nag {
-  border-radius: 0em !important;
-}
-.ui.nags .nag:last-child {
-  border-radius: 0em 0em 0.28571429rem 0.28571429rem;
-}
-.ui.bottom.nags .nag:last-child {
-  border-radius: 0.28571429rem 0.28571429rem 0em 0em;
-}
-
-
-/*******************************
-         Theme Overrides
-*******************************/
-
-
-
-/*******************************
-        User Overrides
-*******************************/
-
