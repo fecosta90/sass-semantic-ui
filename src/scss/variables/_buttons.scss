@@ -1,32 +1,132 @@
-//Primary
-$primary-color:#2185D0 !default;
-$primary-color--hover:#1678c2 !default;
-$primary-color--focus: #0d71bb !default;
-$primary-color--active: #1a69a4 !default;
-$primary-color-active:#1279c6 !default;
-$primary-color-active--active:#1279c6 !default;
-
-//Secondary
-$secondary-color:#1B1C1D !default;
-$secondary-color--hover:#27292a !default;
-$secondary-color--focus: #2e3032 !default;
-$secondary-color--active: #343637 !default;
-$secondary-color-active:#27292a !default;
-$secondary-color-active--active:#27292a !default;
-
-//Default
+//Button - Default - Base
 $default-color:#E0E1E2 !default;
 $default-font-color:#rgba(0, 0, 0, 0.6) !default;
+$default-border-color:#rgba(34, 36, 38, 0.15) !default;
+
+//Button - Default - Active
 $default-color--active:#BABBBC !default;
 $default-font-color--active:#rgba(0, 0, 0, 0.9) !default;
+
+//Button - Default - Hover
 $default-color--hover:#CACBCD !default;
 $default-font-color--hover:#rgba(0, 0, 0, 0.8) !default;
+$default-border-color--hover:#rgba(34, 36, 38, 0.15) !default;
+
+//Button - Default - Focus
 $default-color--focus:#CACBCD !default;
 $default-font-color--focus:#rgba(0, 0, 0, 0.8) !default;
+
+//Button - Active - Base
 $default-active-color:#C0C1C2 !default;
 $default-active-font-color:#rgba(0, 0, 0, 0.95) !default;
+
+//Button - Active - Active
 $default-active-color--active:#C0C1C2 !default;
+
+//Button - Active - Hover
 $default-active-color--hover:#C0C1C2 !default;
 $default-active-font-color--hover:#rgba(0, 0, 0, 0.95) !default;
+
+//Button - Active - Focus
 $default-active-color--focus:#BABBBC !default;
 $default-active-font-color--focus:#rgba(0, 0, 0, 0.9) !default;
+
+//Button - Default - Base
+$primary-color:#2185D0 !default;
+$primary-font-color:#FFFFFF !default;
+$primary-border-color:#rgba(34, 36, 38, 0.15) !default;
+
+//Button - Default - Active
+$primary-color--active:#1a69a4 !default;
+$primary-font-color--active:#FFFFFF !default;
+
+//Button - Default - Hover
+$primary-color--hover:#1678c2 !default;
+$primary-font-color--hover:#FFFFFF !default;
+
+//Button - Default - Focus
+$primary-color--focus:#0d71bb !default;
+$primary-font-color--focus:#FFFFFF !default;
+
+//Button - Active - Base
+$primary-active-color:#1279c6 !default;
+$primary-active-font-color:#FFFFFF !default;
+
+//Button - Active - Active
+$primary-active-color--active:#1279c6 !default;
+$primary-active-font-color--active:#FFFFFF !default;
+
+//Button - Default - Base
+
+$primary-basic-font-color:#2185D0 !default;
+$primary-basic-border-color:#2185D0 !default;
+
+//Button - Default - Active
+
+$primary-basic-font-color--active:#1a69a4 !default;
+$primary-basic-border-color--active:#1279c6 !default;
+
+//Button - Default - Hover
+
+$primary-basic-font-color--hover:#1678c2 !default;
+$primary-basic-border-color--hover:#1678c2 !default;
+
+//Button - Default - Focus
+
+$primary-basic-font-color--focus:#1678c2 !default;
+$primary-basic-border-color--focus:#0d71bb !default;
+
+//Button - Active - Base
+
+$primary-basic-active-font-color:#1a69a4 !default;
+$primary-basic-active-border-color:#1a69a4 !default;
+
+//Button - Default - Base
+$secondary-color:#1B1C1D !default;
+$secondary-font-color:#FFFFFF !default;
+$secondary-border-color:#rgba(34, 36, 38, 0.15) !default;
+
+//Button - Default - Active
+$secondary-color--active:#343637 !default;
+$secondary-font-color--active:#FFFFFF !default;
+
+//Button - Default - Hover
+$secondary-color--hover:#27292a !default;
+$secondary-font-color--hover:#FFFFFF !default;
+
+//Button - Default - Focus
+$secondary-color--focus:#2e3032 !default;
+$secondary-font-color--focus:#FFFFFF !default;
+
+//Button - Active - Base
+$secondary-active-color:#27292a !default;
+$secondary-active-font-color:#FFFFFF !default;
+
+//Button - Active - Active
+$secondary-active-color--active:#27292a !default;
+$secondary-active-font-color--active:#FFFFFF !default;
+
+//Button - Default - Base
+
+$secondary-basic-font-color:#1B1C1D !default;
+$secondary-basic-border-color:#1B1C1D !default;
+
+//Button - Default - Active
+
+$secondary-basic-font-color--active:#343637 !default;
+$secondary-basic-border-color--active:#27292a !default;
+
+//Button - Default - Hover
+
+$secondary-basic-font-color--hover:#27292a !default;
+$secondary-basic-border-color--hover:#27292a !default;
+
+//Button - Default - Focus
+
+$secondary-basic-font-color--focus:#27292a !default;
+$secondary-basic-border-color--focus:#2e3032 !default;
+
+//Button - Active - Base
+
+$secondary-basic-active-font-color:#343637 !default;
+$secondary-basic-active-border-color:#343637 !default;
