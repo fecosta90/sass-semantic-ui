@@ -62,7 +62,7 @@
             }
         }
         &:active {
-            background-color: $default-color--active
+            background-color: $default-color--active;
             background-image: '';
             color: $default-font-color--active;
             box-shadow: 0px 0px 0px 1px transparent inset, none;

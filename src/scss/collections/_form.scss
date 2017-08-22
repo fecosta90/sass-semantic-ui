@@ -65,7 +65,6 @@
         font-family: $font-family;
         margin: 0em;
         outline: none;
-        -webkit-appearance: none;
         tap-highlight-color: rgba(255, 255, 255, 0);
         line-height: 1.21428571em;
         padding: 0.67857143em 1em;
@@ -75,13 +74,11 @@
         color: $font-color;
         border-radius: 0.28571429rem;
         box-shadow: 0em 0em 0em 0em transparent inset;
-        -webkit-transition: color 0.1s ease, border-color 0.1s ease;
         transition: color 0.1s ease, border-color 0.1s ease;
       }
     }
     textarea {
       margin: 0em;
-      -webkit-appearance: none;
       tap-highlight-color: rgba(255, 255, 255, 0);
       padding: 0.78571429em 1em;
       background: $white;
@@ -90,7 +87,6 @@
       color: $font-color;
       border-radius: 0.28571429rem;
       box-shadow: 0em 0em 0em 0em transparent inset;
-      -webkit-transition: color 0.1s ease, border-color 0.1s ease;
       transition: color 0.1s ease, border-color 0.1s ease;
       font-size: 1em;
       line-height: 1.2857;
@@ -120,7 +116,6 @@
       box-shadow: 0em 0em 0em 0em transparent inset;
       padding: 0.62em 1em;
       color: $font-color;
-      -webkit-transition: color 0.1s ease, border-color 0.1s ease;
       transition: color 0.1s ease, border-color 0.1s ease;
     }
     .field > .selection.dropdown {
@@ -150,8 +145,6 @@
       width: auto;
     }
     .ten.fields .ui.input input, .nine.fields .ui.input input, .eight.fields .ui.input input, .seven.fields .ui.input input, .six.fields .ui.input input, .five.fields .ui.input input, .four.fields .ui.input input, .three.fields .ui.input input, .two.fields .ui.input input, .wide.field .ui.input input {
-      -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
       flex: 1 0 auto;
       width: 0px;
     }
@@ -237,7 +230,6 @@
       border-radius: 0.28571429rem;
       background: $white;
       box-shadow: 0px 0em 0em 0em rgba(34, 36, 38, 0.35) inset;
-      -webkit-appearance: none;
     }
     &.success {
       .success.message:not(:empty) {
@@ -247,8 +239,6 @@
         display: inline-block;
       }
       .icon.success.message:not(:empty) {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
       }
     }
@@ -260,8 +250,6 @@
         display: inline-block;
       }
       .icon.warning.message:not(:empty) {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
       }
     }
@@ -273,8 +261,6 @@
         display: inline-block;
       }
       .icon.error.message:not(:empty) {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
       }
     }
