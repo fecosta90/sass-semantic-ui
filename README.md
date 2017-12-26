@@ -9,7 +9,7 @@ The package only has the default theme.
 ## Installation and Usage
 
 ```shell
-yarn add --dev semantic-ui-sass
+npm i --save-dev github:bloodf/sass-semantic-ui#master
 ```
 
 ### JavaScript
